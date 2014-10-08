@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<html lang="en" ng-app>
+<html lang="en" ng-app="myApp">
 <head>
 	<meta charset="UTF-8">
 	<title>Angular Tutorial</title>
 	<script src="lib/angular/angular.js"></script>
+	<script src="js/controllers.js"></script>
 </head>
 <body>
-
+<div ng-controller = "MyController">
+	<h1>{{ author.name }}</h1>
+	<p>{{ author.title + ", " + author.company }}</p>
+</div>
 </body>
 </html>
